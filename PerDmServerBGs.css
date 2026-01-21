@@ -1,0 +1,62 @@
+/* Created by Computer Cat, Maintained by Benzeel */ /*v1*/
+
+/* --- v Custom dm/server/channel backgrounds (per instance) v --- */
+div[class*="-content"]:has(div[class*="sidebar"]) {
+> div > div > div[class*="-chat"] {
+        /* Uncomment this if you *do not* want to be fully consistent with normal discord*/
+        background: var(--background-gradient-chat,var(--background-base-lower));
+
+        /* Try commenting this out if you have a theme*/
+        [class*="-subtitleContainer"] > [class*="-title"], main[class*="-chatContent"], [class*="-subtitleContainer"] [class*="-children"]::after, ._6c79861fd96f56b1-wrapper, .fc817765600a960a-wrapper, .f369dba7416c67f0-container
+        {background: transparent !important;}
+
+        background-size: cover ! important;
+        background-position: center ! important;
+        border: 1px solid #292929;
+        /* forum card background tint */
+        .f369dba7416c67f0-mainCard {
+          background: #0000002d;
+          backdrop-filter: blur(20px);
+        }
+        .f369dba7416c67f0-mainCard:hover {
+          background: #00000057;
+        }
+
+        /* DM's */
+        /*                Duplicate this part per user.        v ID HERE                                 v URL HERE            TINT HERE IF YOU WANT IT v             v blur, use with caution of lag*/
+        &:has([class*="-children"] [class*="-avatar"][src*="000000000"]) {background: url("https://m.patchokki.art/m/7i9.gif"); &::before {background: #00000086; /*backdrop-filter: blur(5px);*/}}
+
+        /* Tint*/ /* CURRENTLY BREAKS FORUM CHAT WINDOWS */
+        position: relative;
+        &::before { content: ""; position: absolute; inset: 0;} 
+    }
+
+    /*Uncomment to specify custom textbar color.*/
+    .f75fb00fb7356cbe-channelTextArea, .f75fb00fb7356cbe-channelTextArea > div
+    { background: #0000001c; }
+
+    /* Servers/Channel                                    (server id first + channel id after to target a channel) */
+    /* Duplicate this part per server.                                       v ID(s) HERE                                                         v URL HERE                      TINT HERE IF YOU WANT IT v                         v blur, use with caution of lag*/
+
+    &:has(li[class*="-containerDefault"] [class*="-link"][href*="/channels/0000000000"]) div.f75fb00fb7356cbe-chat { background: url("https://m.patchokki.art/m/7i9.gif"); &::before {background: #00000086; /*backdrop-filter: blur(5px);*/}}
+
+}
+/* --- ^ Custom dm/server/channel backgrounds (per instance) ^ --- */
+
+/* reaction, msg actions popover theming (optional, uncomment if you wish to theme it) 
+.f84418acfdbdfe54-popover {background: #00000000 !important;}
+*/
+/* fix chat date divider text background */
+._908e20001ad67812-content {background: transparent; backdrop-filter: blur(2px);} 
+
+/* darken top bar */
+.f75fb00fb7356cbe-subtitleContainer {background: #0000003d; /*backdrop-filter: blur(5px);*/}
+
+/* fix skeleton loader background */
+.d852db00c0588eb9-wrapper {background-color: transparent;}
+
+/* jump to present bar blur & tint */
+._0f481cbbd7530492-bottomBar {background-color: #0000002f;backdrop-filter: blur(10px);}
+
+/* remove reply badge background */
+.c19a557985eb7793-replyBadge {background: none;}
