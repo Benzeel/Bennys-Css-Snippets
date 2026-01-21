@@ -1,0 +1,287 @@
+/* ----------- blur more things v1 ------------ */
+
+/* attatchment bar */
+.visual-refresh
+.f75fb00fb7356cbe-form {.b77158512e0ab116-channelAttachmentArea {background-color: transparent;}}
+.aa605f19898fe32e-upload {background: #0000003d;}
+.f7ecaca5c80dbf3a-wrapper {background: #00000065; backdrop-filter: blur(10px);}
+
+/* "view reactions" popup */
+._8a031a135bfcb9ba-container {background: #14141494; backdrop-filter: blur(10px);}
+
+/* Threads Dropdown */
+.d9c8822889d1d4a1-header {background: #00000052;}
+.d9c8822889d1d4a1-container {background: #0000008c; backdrop-filter: blur(10px);} 
+._6764bd76e0340219-container {background: #2020206e;} 
+._6764bd76e0340219-container:hover {background: #1111116e;} 
+
+/* Pins Dropdown */
+.e8b59c4b335dd2fc-messagesPopoutWrap {background: #0000008c; backdrop-filter: blur(10px);} 
+.e8b59c4b335dd2fc-header {background: #00000052;}
+.e8b59c4b335dd2fc-messageGroupWrapper {background: #2020206e;} 
+.e8b59c4b335dd2fc-messageGroupWrapper:hover {background: #1111116e;} 
+.overlay-a22cb0c66246f5d3-primary {background: #444444; color: #ffffff; backdrop-filter: blur(10px);}
+
+/* Modals */
+._49fc18ba07c5025f-root {background: #1414143b; backdrop-filter: blur(20px); border-radius: 15px;} 
+.lookFilled__3f413.a16aea1526925c2c-popout, .lookFilled__3f413.a16aea1526925c2c-popout.a16aea1526925c2c-popoutPositionTop, 
+.a16aea1526925c2c-popout, .a16aea1526925c2c-popout.a16aea1526925c2c-popoutPositionTop {background: #0808088e; backdrop-filter: blur(20px);}
+._49fc18ba07c5025f-footerSeparator {background: none;}
+.fd14e024a43b9049-message {background: #0000003f; border: 1px solid var(--border-subtle); border-radius: 8px;}
+
+/* topics / summaries */
+._0f481cbbd7530492-topicsPillContainer, ._0f481cbbd7530492-newTopicsBarContainer {
+    background: transparent; 
+    border: none;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: #00000054;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        backdrop-filter: blur(10px);
+    }
+}
+._0f481cbbd7530492-topicsDropdownHeading {background: #000000b9; backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-subtle);}
+._0f481cbbd7530492-topicsScroller {background: #000000b0; backdrop-filter: blur(10px);}
+.e97453749c8b22b3-container {background: #2020206e; border: 1px solid var(--border-subtle);}
+.e97453749c8b22b3-container:hover {background: #1111116e;}
+
+/* summary selected background shape and colour */
+._0f481cbbd7530492-topicsPillTextSelected, 
+._0f481cbbd7530492-newTopicsBarTextSelected {border-radius: 6px; background-color: #00000036;}
+
+/* transparent emoji gif and sticker picker */
+._4106ae7c1472c1de-wrapper {background: #0000009a;}
+._084343c4f11eaaab-contentWrapper {background: #0000009a;  backdrop-filter: blur(10px);} /* make background transparent and blurred */
+
+/*makes the gif and diversity (emoji colour) button backgrounds translucent  */
+.a45a2a5d0f4caddc-diversitySelectorOptions, ._43deb08d456619a2-gifFavoriteButton {background: #00000067;} 
+
+/* prevent emoji sidebar icons and servers from rendering under bottom bar */
+/* (creates kown oddness when scrolling all the way down) */
+.b9ee0c229bc0b6bb-unicodeShortcut, ._3ad28b0867fa3fad-standardStickerShortcut {position: relative;}
+
+/* add drop shadow to emoji category text for better visibilty */
+._14245bb948377a25-wrapper {
+    filter: 
+    drop-shadow(0px 0px 10px #000000) 
+    drop-shadow(0px 0px 10px #000000) 
+    drop-shadow(0px 0px 1px #000000); 
+    background-image: 
+    linear-gradient(0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.81) 40%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+ );
+}
+
+/* give more emoji menu elements transparency */
+.aeaaeb2a573807f0-inspector, .fed6d32841cc2da2-container, ._14245bb948377a25-wrapper, 
+.c0e32c5cffed3d9f-emojiPickerHasTabWrapper .c0e32c5cffed3d9f-categoryList, 
+._4106ae7c1472c1de-wrapper._3ad28b0867fa3fad-categoryList, .fed6d32841cc2da2-header, 
+.b9ee0c229bc0b6bb-categoryItemDefaultCategory, ._8ef02eea17068b73-header, 
+._4e6cebf8beed1ad8-wrapper
+{background: transparent;}
+/*emoji sidebar: item selected */
+.b9ee0c229bc0b6bb-categoryItemDefaultCategorySelected, 
+._3ad28b0867fa3fad-firstPartyCategorySelected, 
+._3ad28b0867fa3fad-stickerCategoryGenericSelected 
+{background-color: #00000046;}
+/* emoji sidebar: hover */
+.b9ee0c229bc0b6bb-categoryItemDefaultCategorySelected:hover, 
+._3ad28b0867fa3fad-firstPartyCategorySelected:hover, 
+._3ad28b0867fa3fad-stickerCategoryGenericSelected:hover 
+{background-color: #52525260;}
+/* sticker and emoji hover */
+.fc7141859aaa98b7-emojiItem.fc7141859aaa98b7-emojiItemSelected, 
+.fc7141859aaa98b7-emojiItem.expandCollapseButtonSelected_fc7141, 
+.c6367b0f171ba6d7-stickerInspected .c6367b0f171ba6d7-inspectedIndicator 
+{background-color: #00000046;}
+/*emoji and sticker info popup*/
+.d5cd2da5733d0b6e-guildSection 
+{background: transparent;}
+._0f481cbbd7530492-popoutContainer 
+{background-color: #00000089;}
+
+/* blur react hover popup */
+.b49891f8a231dbff-reactionTooltip {background: transparent; background-color: #00000089; backdrop-filter: blur(8px);}
+
+/*blur right click menu */
+  .c1e9c47c23f12ca3-menu {
+    background: transparent;
+    position: relative;
+    &::before{
+      position: absolute;
+      inset: 0;
+      display: block;
+      content:"";
+      backdrop-filter: blur(5px);
+      background-color: #000000a1;
+      border-radius: 8px;
+    }
+  }
+.c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused {background-color: var(--rightclickmenuhovercolour); } 
+.menu_ad5fac .menuItemFocused_ad5fac, 
+.menuItemColor_ce8328:hover, .c1e9c47c23f12ca3-colorBrand.c1e9c47c23f12ca3-focused, 
+.c1e9c47c23f12ca3-colorBrand:active:not(.c1e9c47c23f12ca3-hideInteraction), 
+.c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused, 
+.c1e9c47c23f12ca3-colorDefault:active:not(.c1e9c47c23f12ca3-hideInteraction){background-color: var(--rightclickmenuhovercolour); color: #ebebeb;} 
+
+/* right click menu > more reactions > emoji picker */
+[class*="_59d0d7075b521375-clickTrapContainer "] 
+[class*="_59d0d7075b521375-layer"] [class*="faf9c0f0be1b8685-animatorLeft"] 
+[id="emoji-picker-tab-panel"] .c0e32c5cffed3d9f-header {
+  background: #0000009a;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-subtle);
+}
+[class*="_59d0d7075b521375-clickTrapContainer "] 
+[class*="_59d0d7075b521375-layer"] [class*="faf9c0f0be1b8685-animatorLeft"] 
+[id="emoji-picker-tab-panel"] .c0e32c5cffed3d9f-emojiPicker {
+  background-color: #0000009a;
+  backdrop-filter: blur(10px);
+}
+
+/* forum reactions bar > emoji picker */
+[class="_59d0d7075b521375-layerContainer"] [class="_59d0d7075b521375-clickTrapContainer"] 
+[class="theme-dark theme-midnight images-dark _59d0d7075b521375-layer"] 
+[class="faf9c0f0be1b8685-animatorRight faf9c0f0be1b8685-translate faf9c0f0be1b8685-didRender"]
+[id="emoji-picker-tab-panel"] .c0e32c5cffed3d9f-header {
+  background: #0000009a !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-subtle);
+}
+[class="_59d0d7075b521375-layerContainer"] [class="_59d0d7075b521375-clickTrapContainer"] 
+[class="theme-dark theme-midnight images-dark _59d0d7075b521375-layer"] 
+[class="faf9c0f0be1b8685-animatorRight faf9c0f0be1b8685-translate faf9c0f0be1b8685-didRender"]
+[id="emoji-picker-tab-panel"] .c0e32c5cffed3d9f-emojiPicker {
+  background-color: #0000009a !important;
+  backdrop-filter: blur(10px);
+}
+[class="_59d0d7075b521375-layerContainer"] >
+[class="_59d0d7075b521375-clickTrapContainer _59d0d7075b521375-trapClicks"] > 
+._59d0d7075b521375-layer:has([class="faf9c0f0be1b8685-animatorLeft faf9c0f0be1b8685-fade faf9c0f0be1b8685-didRender"]){
+  right: 5.5vh !important;
+  top: 15vh !important;
+}
+
+/* pins: jump to button */
+[data-mana-component="button"], .a22cb0c66246f5d3-secondary, 
+.a22cb0c66246f5d3-button, .e8b59c4b335dd2fc-buttonContainer {background: none;}
+.e8b59c4b335dd2fc-buttonContainer {backdrop-filter: blur(5px);}
+
+/* ------ inbox start ------ */
+    [id*="popout_"] [aria-label="Inbox"] [class="fc561d3c125f6a2f-container _957962c2bd49881b-recentMentionsPopout"] {
+      background: none;
+      backdrop-filter: blur(10px);
+    }
+    [id*="popout_"] [aria-label="Inbox"] [class="fc561d3c125f6a2f-container _957962c2bd49881b-recentMentionsPopout"] 
+    [class="ab66419eae73260f-header e8b59c4b335dd2fc-header"] {
+      background: #00000098;
+    }
+    [id*="popout_"] [aria-label="Inbox"] [class="_0f7115b4703f7b3a-container d125d22cdfd32cfe-thin d125d22cdfd32cfe-scrollerBase"] {
+      background: #0000004f;
+    }
+    div._2692d04af6567ec8-scroller.group-spacing-16.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase {
+      background: #0000004f;
+    }
+    #popout_1580 > div > div > div.d404a36e7b59cdcf-container {
+        background: #0000004f;
+    }
+    .e8b59c4b335dd2fc-messagesPopoutWrap {
+      background: #0000004f;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+    .a54d1d0b84a59dce-container {
+      background: #0000004f;
+      padding: 98.5px;
+      margin: 0px;
+    }
+    ._35a7ecf3aba351b2-channelHeader {background: none;}
+    ._35a7ecf3aba351b2-guildIcon, ._35a7ecf3aba351b2-collapseButton {filter: drop-shadow(0px 0px 10px #000000); }
+    ._35a7ecf3aba351b2-collapseButton {z-index: 999;}
+    ._35a7ecf3aba351b2-channelNameSection {
+      border: 1px solid #646464;
+      background: #00000062;
+      border-radius: 8px;
+      padding: 5px;
+      backdrop-filter: blur(10px);
+    }
+    .a22cb0c66246f5d3-button {
+      border: 1px solid #646464a2;
+      background: #00000028;
+      backdrop-filter: blur(10px);
+    }
+  /* opaque message container BG to make server/channel name box blur look less doo doo */
+    ._1ccd1ba5cb2270c2-messages {background: #111111;}
+    ._957962c2bd49881b-messageContainer {background: #111111;}
+/* ------ inbox end ------ */
+
+/* ------ SETTINGS MENU START ------ */
+
+    /* settings menu scroll shadow */
+      ._409aa1aeee28d5f7-fixedContent:after {border-top-left-radius:  8px;border-top-right-radius:  8px;}
+    /* settings menu main BG */
+      .e9e3ed8b8badfe05-content {background: #00000046;}
+      [class="e9e3ed8b8badfe05-contentHeader theme-dark theme-midnight images-dark"] {background: #00000083;} 
+    /* Security Keys BG */
+      ._6c75d92c128c46b0-credentialItem {background: none;}
+      ._6c75d92c128c46b0-credentialItem:is(:first-child) {border:0px;}
+      ._6c75d92c128c46b0-credentialList {background: #0c0c0c83; border-radius: 8px; border: 1px solid var(--border-subtle); }
+    /* krisp bg */
+      ._730694f5672c9601-card:not(._730694f5672c9601-outline) {background: none;}
+    /* keybinding bgs */
+      ._740f25428e5fa983-defaultKeybindGroup {background: #2b2a2a63;}
+    /* vencord quick actions */
+      .vc-card-base {background: none;}
+      .vc-settings-quickActions-pill {background: #55555571;}
+      .vc-settings-quickActions-pill:hover {background: #7e7e7e71;}
+    /* Plugins */
+      .vc-addon-card {background: none;}
+    /* server boosts */
+      .ceb06aa49ba836f9-appliedBoostContainer {background: none; border: 1px solid var(--border-subtle);}
+      ._5dba5003598d9c70-guildContainer {background: #3d3d3d52;}
+      .ceb06aa49ba836f9-boostContainer {background: #141414a1;}
+    /* server boost faq */
+      ._5b98ee5ec86ed598-wrapper {background: #3d3d3d52;}
+    /* Share nitro */
+      .a61c561e7be40d05-expandedProgressBarContainerSettingsPage {background: none;backdrop-filter: none;}
+    /* my account */
+      ._1fed1dd06c7aabf7-accountProfileCard {background: #03030333; border: 1px solid var(--border-subtle);}
+      ._1fed1dd06c7aabf7-background {background: #1818183b; border: 1px solid var(--border-subtle);}
+      ._1fed1dd06c7aabf7-fieldList {background: none;}
+    /* appearance */
+      ._730694f5672c9601-cardPrimary, ._730694f5672c9601-cardPrimary._730694f5672c9601-editable {background: #03030356;;}
+
+/* ------ END OF SETTINGS MENU ------ */
+
+
+/* embeds */
+._623de82e76ad7f82-embedFull {background: #0000006c; backdrop-filter: blur(10px);border: 1px solid var(--border-subtle);}
+
+/* Audio File Attatchments */
+.cf09d85aafe7e124-wrapper {background: none;}
+.cf09d85aafe7e124-wrapperAudio {background: #00000031; backdrop-filter: blur(10px);}
+._06ab41fd2ef7af3f-hoverButtonGroup {outline: none; background: #0000004f; backdrop-filter: blur(5px);}
+
+/* Forum reactions bar */
+._34c2c51cfce1632e-container, ._34c2c51cfce1632e-header {background: #00000071; backdrop-filter: blur(10px); border-bottom-right-radius: 8px;}
+
+/* file upload */
+._0ccaee68b77c7469-file {background: #00000031; backdrop-filter: blur(10px);}
+
+/* CHANNEL LIST SCROLLBAR HIDE */
+._2637a2609f343032-container > .d125d22cdfd32cfe-scrollerBase  {scrollbar-width: none !important;}
+
+/* channel threads peek popover */
+._76f047ded9fef6d4-popout {background-color: #0e0e0ea6; backdrop-filter: blur(10px);}
+
+/* Restore normal theming to image viewer buttons 
+cus im stupid and too lazy to fix what was causing it*/
+div._6088c3df6d10c76d-topBar > 
+div.cc1819cb49c2d109-actionButtons._5cd4440e78ca4a65-base._5cd4440e78ca4a65-focusSensitive > 
+span > .a22cb0c66246f5d3-button {border: none; background: none; backdrop-filter: none;}
