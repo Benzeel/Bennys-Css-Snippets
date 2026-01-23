@@ -1,4 +1,4 @@
-/* ----------- blur more things v1 ------------ */
+/* ----------- blur more things v2 ------------ */
 
 /* attatchment bar */
 .visual-refresh
@@ -285,3 +285,23 @@ cus im stupid and too lazy to fix what was causing it*/
 div._6088c3df6d10c76d-topBar > 
 div.cc1819cb49c2d109-actionButtons._5cd4440e78ca4a65-base._5cd4440e78ca4a65-focusSensitive > 
 span > .a22cb0c66246f5d3-button {border: none; background: none; backdrop-filter: none;}
+
+/* search suggestions */
+._16eb0bfd5c5a90d1-container {background: #00000065; backdrop-filter: blur(10px);}
+
+/* members list */
+.c8ffbb79449f399c-members, .c8ffbb79449f399c-member, 
+._0f2e83213c878a13-container {background: none;}
+.c8ffbb79449f399c-container {background: #00000079;}
+
+/* activity card hover */
+.af3b89684c536957-popoutContentWrapper, 
+.af3b89684c536957-interactionsContainer {background: #00000081;}
+.af3b89684c536957-popout {backdrop-filter: blur(10px);}
+
+/* slash menu sidebar */
+.b1e4f3fb96801b99-wrapper {background: none;}
+
+/* slash menu modifier bg */
+.theme-dark .a195358c0257a1b0-option {background-color: #00000046;}
+
