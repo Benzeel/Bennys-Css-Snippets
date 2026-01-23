@@ -1,0 +1,69 @@
+/* IMAGE VIEWER THEMING v1 */
+
+/* make photo view scrim less dark */
+._40128e129e4f87de-scrim {
+  background-color: var(--background-scrim);
+  backdrop-filter: blur(5px);
+}
+.d3a6f0de39ff36e9-carouselModal.theme-dark.theme-midnight.images-dark._49fc18ba07c5025f-root {
+  backdrop-filter: none;
+}
+
+/* image author background */
+div._6088c3df6d10c76d-topBar > div._6088c3df6d10c76d-author._5cd4440e78ca4a65-base {
+  position: relative;
+  &::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  bottom: -8%;
+  top: -50%;
+  left: -35%;
+  right: -10%;
+  z-index: -1;
+  transform: translateY(15%);
+  background-color: #ffffff0c;
+  }
+}
+
+/*move author position*/
+._6088c3df6d10c76d-authorAvatar {
+  z-index: 2;
+  transform: translatex(45%);
+}
+._6088c3df6d10c76d-author {
+
+  transform: translatex(10%);
+}
+
+/*theme action buttons to match author background*/
+div._6088c3df6d10c76d-topBar > .cc1819cb49c2d109-actionButtons, 
+div._6088c3df6d10c76d-topBar > .aec7abc73c126bc0-button {
+  background-color: #ffffff0c;
+}
+
+/*X button theming*/
+div._6088c3df6d10c76d-topBar > .aec7abc73c126bc0-button {
+  transform: translateY(2%) scale(110%);
+}
+
+/* size up previous & next buttons */
+div.bc663cf6190ce9ad-layer
+ > div > div > 
+ .aec7abc73c126bc0-button {
+  background: #5e5e5e1c;
+  transform: scale(140%);
+  height: 50%;
+  place-items: center;
+  display: flex;
+}
+
+div.bc663cf6190ce9ad-layer
+ > div > div > 
+ div.aec7abc73c126bc0-button > .aec7abc73c126bc0-buttonInner {
+  border-color: #6e6e6e;
+  height: 100%;
+
+ }
