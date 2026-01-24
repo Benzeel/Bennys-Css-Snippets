@@ -1,46 +1,46 @@
 
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v1*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v2*/
 
 /*NOTE, THIS HAS BUGGINESS WITH MUILTI LINE MESSAGES AND OCCASIONALLY PUSHING THE CHAT UP*/
 
 /* ---- v Indev transparent messagebox v ---- */
-form.f75fb00fb7356cbe-formWithLoadedChatInput { margin-top: calc(-16px - 10vh) !important;} /* Eat message area's space */
-div[class*="-messagesWrapper"] > div[class*="-bottomBar"] {bottom: calc(10vh + 28px);} /* Fix new messages bar*/
-div[class*="-messagesWrapper"] > div[class*="bottomBar__"], /* New messages bar */
-div[class*="-autocomplete "], /* Emojis and stuff */
-div[class*="-channelTextArea"]::before { /* actual text area */
+form.formWithLoadedChatInput_f75fb0 { margin-top: calc(-16px - 10vh) !important;} /* Eat message area's space */
+div[class*="messagesWrapper_"] > div[class*="bottomBar_"] {bottom: calc(10vh + 28px);} /* Fix new messages bar*/
+div[class*="messagesWrapper_"] > div[class*="bottomBar__"], /* New messages bar */
+div[class*="autocomplete_"], /* Emojis and stuff */
+div[class*="channelTextArea_"]::before { /* actual text area */
   backdrop-filter: blur(10px); /* Configure blur amount here */
 }
 
-[class*="-autocompleteInner"] {
+[class*="autocompleteInner_"] {
   background-color: #00000023;
 }
 
-div[class*="-channelTextArea"] { /* actual text area overrides */
+div[class*="channelTextArea_"] { /* actual text area overrides */
   position: relative;
   background: transparent !important;
   &::before { content: ""; position: absolute; inset: 0; border-radius: inherit; } /* Set up blur */
   > * { position: relative;} /* Fix some stuff */
-  > [class*="-autocomplete"] { position: absolute; } /* Override commands and emoji menu format */
-  > *:not([class*="-autocomplete"]) {background: 0 0 !important;} /* Text area's internals excluding emojis and commands */
+  > [class*="autocomplete_"] { position: absolute; } /* Override commands and emoji menu format */
+  > *:not([class*="autocomplete-"]) {background: 0 0 !important;} /* Text area's internals excluding emojis and commands */
 }
 
-ol[class*="-scrollerInner"][data-list-id="chat-messages"]::after { /* Add spacer for the bottom*/
+ol[class*="scrollerInner_"][data-list-id="chat-messages"]::after { /* Add spacer for the bottom*/
   display: block;
   content: "";
   position: relative;
   height: 10vh;
 }
 
-div[class*="-floatingBars"] {[class*="-banner"] { background: 0 0;}} /* Override for new member steps */
+div[class*="floatingBars_"] {[class*="-banner"] { background: 0 0;}} /* Override for new member steps */
 
-[class="_36d072eab2b2e737-chatTypingGradientNotAtBottom _36d072eab2b2e737-chatGradientBase"] { /* hide typing gradient */
+[class="chatTypingGradientNotAtBottom__36d07 chatGradientBase__36d07"] { /* hide typing gradient */
   display: none !important;
 }
 /* ---- ^ Indev transparent messagebox ^ ---- */
 
 /* fix & thin out scrollbar */
-.d125d22cdfd32cfe-managedReactiveScroller,._36d072eab2b2e737-scroller {
+.managedReactiveScroller_d125d2,.scroller__36d07 {
   &::-webkit-scrollbar {
     height: 10px;
     width: 10px;
