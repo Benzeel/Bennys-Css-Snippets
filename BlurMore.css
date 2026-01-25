@@ -1,4 +1,4 @@
-/* ----------- blur more things v4 ------------ */
+/* ----------- blur more things v5 ------------ */
 
 /* attatchment bar */
 .visual-refresh
@@ -304,6 +304,9 @@ span > .button_a22cb0 {border: none; background: none; backdrop-filter: none;}
 
 /* slash menu modifier bg */
 .theme-dark .option_a19535 {background-color: #00000046;}
+
+/* remove the slight blur for server banners when not hovered cus discord is wacky as hell */
+.bannerVisible_f37cb1 .headerEllipseBackdrop_f37cb1 {backdrop-filter: none;}
 
 /* To Do:
 - activity card hover emoji menu
