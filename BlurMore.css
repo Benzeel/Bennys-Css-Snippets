@@ -1,4 +1,4 @@
-/* ----------- blur more things v3 ------------ */
+/* ----------- blur more things v4 ------------ */
 
 /* attatchment bar */
 .visual-refresh
@@ -297,7 +297,7 @@ span > .button_a22cb0 {border: none; background: none; backdrop-filter: none;}
 /* activity card hover */
 .popoutContentWrapper_af3b89, 
 .interactionsContainer_af3b89 {background: #00000081;}
-.popout_af3b89 {backdrop-filter: blur(10px);}
+.popout_af3b89 {backdrop-filter: blur(10px); border-radius: 12px;}
 
 /* slash menu sidebar */
 .wrapper_b1e4f3 {background: none;}
