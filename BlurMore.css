@@ -1,4 +1,4 @@
-/* ----------- blur more things v6 ------------ */
+/* ----------- blur more things v7 ------------ */
 
 /* attatchment bar */
 .visual-refresh
@@ -291,8 +291,8 @@ span > .button_a22cb0 {border: none; background: none; backdrop-filter: none;}
 
 /* members list */
 .members_c8ffbb, .member_c8ffbb, 
-.container__0f2e8 {background: none;}
-.container_c8ffbb {background: var(--memberslistbg);}
+.container__0f2e8, .container__7641b {background: none;}
+.container_c8ffbb, .container__7641b {background: var(--memberslistbg);}
 
 /* activity card hover */
 .popoutContentWrapper_af3b89, 
