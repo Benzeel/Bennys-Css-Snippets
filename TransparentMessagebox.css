@@ -1,5 +1,5 @@
 
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v3*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v4*/
 
 /*NOTE, THIS HAS BUGGINESS WITH MUILTI LINE MESSAGES AND OCCASIONALLY PUSHING THE CHAT UP*/
 
@@ -34,7 +34,7 @@ ol[class*="scrollerInner_"][data-list-id="chat-messages"]::after { /* Add spacer
 
 div[class*="floatingBars_"] {[class*="-banner"] { background: 0 0;}} /* Override for new member steps */
 
-[class="chatTypingGradientNotAtBottom__36d07 chatGradientBase__36d07"], [class="chatGradient__36d07 chatGradientBase__36d07"] { /* hide typing gradient */
+.chatTypingGradientAtBottom__36d07, .chatGradient__36d07, .chatGradientBase__36d07 { /* hide typing gradient */
   display: none !important;
 }
 /* ---- ^ Indev transparent messagebox ^ ---- */
