@@ -38,7 +38,7 @@ div[class*="content_"]:has(div[class*="sidebar"]) {
     /* Servers/Channel                                    (server id first + channel id after to target a channel) */
     /* Duplicate this part per server.                                       v ID(s) HERE                                                         v URL HERE                      TINT HERE IF YOU WANT IT v                         v blur, use with caution of lag*/
 
-    &:has(li[class*="containerDefault_"] [class*="link_"][href*="/channels/0000000000"]) div.f75fb00fb7356cbe-chat { background: url("https://m.patchokki.art/m/7i9.gif"); &::before {background: #00000086; /*backdrop-filter: blur(5px);*/}}
+    &:has(li[class*="containerDefault_"] [class*="link_"][href*="/channels/0000000000"]) div.chat_f75fb0 { background: url("https://m.patchokki.art/m/7i9.gif"); &::before {background: #00000086; /*backdrop-filter: blur(5px);*/}}
 
 }
 /* --- ^ Custom dm/server/channel backgrounds (per instance) ^ --- */
