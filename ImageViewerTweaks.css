@@ -1,4 +1,4 @@
-/* IMAGE VIEWER THEMING V3*/
+/* IMAGE VIEWER THEMING V4*/
 
 /* make photo view scrim less dark */
 .scrim__40128 {
@@ -66,3 +66,9 @@ div.layer_bc663c
   border-color: #6e6e6e;
   height: 100%;
  }
+
+/* brighten backgrounds for transparent images for legibility*/
+.imageWrapper.imageWrapper_af017a.media_a22bfd > .loadingOverlay_af017a {
+  background-color: #ffffff31;
+  border-radius: 8px;
+}
