@@ -1,5 +1,6 @@
 /* ----------- blur more things v8 ------------ */
 
+
 /* attatchment bar */
 /*.visual-refresh >*/
 .form_f75fb0 {.channelAttachmentArea_b77158 {background-color: transparent;}}
@@ -348,11 +349,6 @@
   backdrop-filter: blur(10px);
 }
 
-/* CHANNEL LIST SCROLLBAR HIDE */
-.container__2637a > .scrollerBase_d125d2 {
-  scrollbar-width: none !important;
-}
-
 /* channel threads peek popover */
 .popout__76f04 {
   background-color: #0e0e0ea6; 
@@ -404,7 +400,7 @@ div.actionButtons_cc1819.base__5cd44.focusSensitive__5cd44 > span > .button_a22c
   transition: 0.3s ease;
   transform: scale(99%) translateY(2%)  ;
 }
-.root__49fc1:has([class="content__49fc1 vc-settings-modal thin_d125d2 scrollerBase_d125d2"]) {
+.root__49fc1:has(.content__49fc1.vc-settings-modal.thin_d125d2.scrollerBase_d125d2) {
   border: 2px solid #df1256c5;
   background: #c71e571e;
   backdrop-filter: blur(50px);
@@ -415,6 +411,5 @@ div.actionButtons_cc1819.base__5cd44.focusSensitive__5cd44 > span > .button_a22c
 - activity card hover emoji menu
 - tooltips (for emojis primarily)
 - apps menu
-- gift modal
-- un disable channel list scroll bar for others 
+- gift modal 
 */
