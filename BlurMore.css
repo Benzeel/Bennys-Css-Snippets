@@ -1,5 +1,4 @@
-/* ----------- blur more things v8 ------------ */
-
+/* ----------- blur more things v9 ------------ */
 
 /* attatchment bar */
 /*.visual-refresh >*/
@@ -189,10 +188,10 @@
   backdrop-filter: blur(10px);
 }
 
-.layerContainer__59d0d > .clickTrapContainer__59d0d.trapClicks__59d0d > .layer__59d0d:has(.animatorLeft_faf9c0.fade_faf9c0.didRender_faf9c0) {
+/*.layerContainer__59d0d > .clickTrapContainer__59d0d.trapClicks__59d0d > .layer__59d0d:has(.animatorLeft_faf9c0.fade_faf9c0.didRender_faf9c0) {
   right: 5.5vh !important; 
   top: 15vh !important;
-}
+}*/
 
 /* pins: jump to button */
 [data-mana-component="button"], .secondary_a22cb0, .button_a22cb0, .buttonContainer_e8b59c {
