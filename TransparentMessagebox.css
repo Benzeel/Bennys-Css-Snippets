@@ -1,38 +1,39 @@
 
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v5*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v6*/
 
 /*NOTE, THIS HAS BUGGINESS WITH MUILTI LINE MESSAGES AND OCCASIONALLY PUSHING THE CHAT UP*/
 
+
 /* ---- v Indev transparent messagebox v ---- */
 form.formWithLoadedChatInput_f75fb0 { margin-top: calc(-16px - 10vh) !important;} /* Eat message area's space */
-div[class^="messagesWrapper_"] > div[class^="bottomBar_"] {bottom: calc(10vh + 28px);} /* Fix new messages bar*/
-div[class^="messagesWrapper_"] > div[class^="bottomBar__"], /* New messages bar */
-div[class^="autocomplete_"], /* Emojis and stuff */
-div[class^="channelTextArea_"]::before { /* actual text area */
+div.messagesWrapper__36d07 > form {bottom: calc(10vh + 28px);} /* Fix new messages bar*/
+div.messagesWrapper__36d07 > form, /* New messages bar */
+div.autocomplete__13533, /* Emojis and stuff */
+div.channelTextArea_f75fb0::before { /* actual text area */
   backdrop-filter: blur(10px); /* Configure blur amount here */
 }
 
-[class^="autocompleteInner_"] {
+div.autocompleteInner__13533 {
   background-color: #00000023;
 }
 
-div[class^="channelTextArea_"] { /* actual text area overrides */
+div.channelTextArea_f75fb0 { /* actual text area overrides */
   position: relative;
   background: transparent !important;
   &::before { content: ""; position: absolute; inset: 0; border-radius: inherit; } /* Set up blur */
-  > * { position: relative;} /* Fix some stuff */
-  > [class^="autocomplete_"] { position: absolute; } /* Override commands and emoji menu format */
-  > *:not([class^="autocomplete-"]) {background: 0 0 !important;} /* Text area's internals excluding emojis and commands */
+  > * {position: relative;} /* Fix some stuff */
+  > div.autocomplete__13533 { position: absolute; } /* Override commands and emoji menu format */
+  > * {background: 0 0 !important;} /* Text area's internals excluding emojis and commands */
 }
 
-ol[class^="scrollerInner_"][data-list-id="chat-messages"]::after { /* Add spacer for the bottom*/
+ol.scrollerInner__36d07::after { /* Add spacer for the bottom*/
   display: block;
   content: "";
   position: relative;
   height: 10vh;
 }
 
-div[class^="floatingBars_"] {[class^="banner_"] { background: 0 0;}} /* Override for new member steps */
+div.floatingBars__74017 {.banner__183e8  { background: 0 0;}} /* Override for new member steps */
 
 .chatTypingGradientAtBottom__36d07, .chatGradient__36d07, .chatGradientBase__36d07 { /* hide typing gradient */
   display: none !important;
