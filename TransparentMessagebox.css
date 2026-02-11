@@ -1,5 +1,5 @@
 
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v6*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v7*/
 
 /*NOTE, THIS HAS BUGGINESS WITH MUILTI LINE MESSAGES AND OCCASIONALLY PUSHING THE CHAT UP*/
 
@@ -9,7 +9,7 @@ form.formWithLoadedChatInput_f75fb0 { margin-top: calc(-16px - 10vh) !important;
 div.messagesWrapper__36d07 > form {bottom: calc(10vh + 28px);} /* Fix new messages bar*/
 div.messagesWrapper__36d07 > form, /* New messages bar */
 div.autocomplete__13533, /* Emojis and stuff */
-div.channelTextArea_f75fb0::before { /* actual text area */
+div.channelTextArea_f75fb0::before, div.wrapper__44df5 { /* actual text area */
   backdrop-filter: blur(10px); /* Configure blur amount here */
 }
 
@@ -34,6 +34,7 @@ ol.scrollerInner__36d07::after { /* Add spacer for the bottom*/
 }
 
 div.floatingBars__74017 {.banner__183e8  { background: 0 0;}} /* Override for new member steps */
+div.wrapper__44df5 { background: 0 0;} /* Override for follow channel */
 
 .chatTypingGradientAtBottom__36d07, .chatGradient__36d07, .chatGradientBase__36d07 { /* hide typing gradient */
   display: none !important;
