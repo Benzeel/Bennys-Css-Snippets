@@ -1,12 +1,12 @@
 
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v7*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v8*/
 
 /*NOTE, THIS HAS BUGGINESS WITH MUILTI LINE MESSAGES AND OCCASIONALLY PUSHING THE CHAT UP*/
 
 
 /* ---- v Indev transparent messagebox v ---- */
-form.formWithLoadedChatInput_f75fb0 { margin-top: calc(-16px - 10vh) !important;} /* Eat message area's space */
-div.messagesWrapper__36d07 > form {bottom: calc(10vh + 28px);} /* Fix new messages bar*/
+form.formWithLoadedChatInput_f75fb0 {margin-top: -11vh !important;} /* Eat message area's space */
+div.messagesWrapper__36d07 > div.jumpToPresentBar__0f481 {bottom: 11vh;} /* Fix new messages bar*/
 div.messagesWrapper__36d07 > form, /* New messages bar */
 div.autocomplete__13533, /* Emojis and stuff */
 div.channelTextArea_f75fb0::before, div.wrapper__44df5 { /* actual text area */
