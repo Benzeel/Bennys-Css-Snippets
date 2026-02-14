@@ -1,4 +1,4 @@
-/* ----------- blur more things v10 ------------ */
+/* ----------- blur more things v11 ------------ */
 
 
 /* attatchment bar */
@@ -188,11 +188,6 @@
   background-color: #0000009a !important; 
   backdrop-filter: blur(10px);
 }
-
-/*.layerContainer__59d0d > .clickTrapContainer__59d0d.trapClicks__59d0d > .layer__59d0d:has(.animatorLeft_faf9c0.fade_faf9c0.didRender_faf9c0) {
-  right: 5.5vh !important; 
-  top: 15vh !important;
-}*/
 
 /* pins: jump to button */
 [data-mana-component="button"], .secondary_a22cb0, .button_a22cb0, .buttonContainer_e8b59c {
@@ -407,9 +402,14 @@ div.actionButtons_cc1819.base__5cd44.focusSensitive__5cd44 > span > .button_a22c
   transition: 0.1s ease;
 }
 
-/* To Do:
+/* edit message box + autocomplete */
+div.scrollableContainer__74017 {background: #00000067; backdrop-filter: blur(10px);}
+.autocomplete__13533 {background: #00000065; }
+
+/* To Do (low priority):
 - activity card hover emoji menu
 - tooltips (for emojis primarily)
 - apps menu
 - gift modal 
 */
+
