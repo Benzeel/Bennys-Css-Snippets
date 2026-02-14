@@ -1,11 +1,9 @@
 
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v8*/
-
-/*NOTE, THIS HAS BUGGINESS WITH MUILTI LINE MESSAGES AND OCCASIONALLY PUSHING THE CHAT UP*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v9*/
 
 
-/* ---- v Indev transparent messagebox v ---- */
-form.formWithLoadedChatInput_f75fb0 {margin-top: -11vh !important;} /* Eat message area's space */
+/* ---- v transparent messagebox v ---- */
+form.formWithLoadedChatInput_f75fb0 {margin-top: -51vh;}  /* Eat message area's space */
 div.messagesWrapper__36d07 > div.jumpToPresentBar__0f481 {bottom: 11vh;} /* Fix new messages bar*/
 div.messagesWrapper__36d07 > form, /* New messages bar */
 div.autocomplete__13533, /* Emojis and stuff */
@@ -26,12 +24,15 @@ div.channelTextArea_f75fb0 { /* actual text area overrides */
   > * {background: 0 0 !important;} /* Text area's internals excluding emojis and commands */
 }
 
+.chat_f75fb0 {overflow: clip;} /* fix chat bar issues with jumping up */
 ol.scrollerInner__36d07::after { /* Add spacer for the bottom*/
   display: block;
   content: "";
   position: relative;
-  height: 10vh;
+  height: 50vh;
 }
+
+
 
 div.floatingBars__74017 {.banner__183e8  { background: 0 0;}} /* Override for new member steps */
 div.wrapper__44df5 { background: 0 0;} /* Override for follow channel */
@@ -39,7 +40,7 @@ div.wrapper__44df5 { background: 0 0;} /* Override for follow channel */
 .chatTypingGradientAtBottom__36d07, .chatGradient__36d07, .chatGradientBase__36d07 { /* hide typing gradient */
   display: none !important;
 }
-/* ---- ^ Indev transparent messagebox ^ ---- */
+/* ---- ^ transparent messagebox ^ ---- */
 
 /* fix & thin out scrollbar */
 .managedReactiveScroller_d125d2,.scroller__36d07 {
@@ -63,7 +64,7 @@ div.wrapper__44df5 { background: 0 0;} /* Override for follow channel */
     visibility: visible;
   }
   &::-webkit-scrollbar-button:end:increment{
-    height: 88px;
+    height: 35%;
   }
   &:hover::-webkit-scrollbar-track {
     background-color: #3f3f3f6e;
