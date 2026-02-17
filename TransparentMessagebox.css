@@ -1,10 +1,10 @@
 
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v10*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v10.1*/
 
 
 /* ---- v transparent messagebox v ---- */
 form.formWithLoadedChatInput_f75fb0 {margin-top: -51vh;}  /* Eat message area's space */
-div.messagesWrapper__36d07 > div.jumpToPresentBar__0f481 {bottom: 51vh;} /* Fix new messages bar*/
+div.messagesWrapper__36d07 > div.jumpToPresentBar__0f481 {bottom: 52vh;} /* Fix new messages bar*/
 div.messagesWrapper__36d07 > form, /* New messages bar */
 div.autocomplete__13533, /* Emojis and stuff */
 div.channelTextArea_f75fb0::before, div.wrapper__44df5 { /* actual text area */
