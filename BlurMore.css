@@ -1,4 +1,4 @@
-/* ----------- blur more things v11 ------------ */
+/* ----------- blur more things v12 ------------ */
 
 
 /* attatchment bar */
@@ -7,7 +7,7 @@
 .upload_aa605f {background: #0000003d;}
 .wrapper_f7ecac {background: #00000065; backdrop-filter: blur(10px);}
 
-/* "view reactions" popup */
+/* "view reactions" popup & settings menu*/
 .container__8a031 {background: #14141494; backdrop-filter: blur(10px);}
 
 /* Threads Dropdown */
@@ -178,13 +178,13 @@
 }
 
 /* forum reactions bar > emoji picker */
-.layerContainer__59d0d .clickTrapContainer__59d0d .theme-dark theme-midnight.images-dark.layer__59d0d.animatorRight_faf9c0.translate_faf9c0.didRender_faf9c0 #emoji-picker-tab-panel .header_c0e32c {
+.layerContainer__59d0d .clickTrapContainer__59d0d .translate_faf9c0.didRender_faf9c0 #emoji-picker-tab-panel .header_c0e32c {
   background: #0000009a !important; 
   backdrop-filter: blur(10px); 
   border: 1px solid var(--border-subtle);
 }
 
-.layerContainer__59d0d .clickTrapContainer__59d0d .theme-dark theme-midnight.images-dark.layer__59d0d .animatorRight_faf9c0.translate_faf9c0.didRender_faf9c0 #emoji-picker-tab-panel .emojiPicker_c0e32c {
+.layerContainer__59d0d .clickTrapContainer__59d0d .layer__59d0d .animatorRight_faf9c0.translate_faf9c0.didRender_faf9c0 #emoji-picker-tab-panel .emojiPicker_c0e32c {
   background-color: #0000009a !important; 
   backdrop-filter: blur(10px);
 }
@@ -261,8 +261,8 @@
       .content_e9e3ed {
         background: #00000046;
       }
-      .contentHeader_e9e3ed.theme-dark.theme-midnight.images-dark {
-        background: none;
+      .contentHeader_e9e3ed {
+        background: transparent !important;
       } 
     /* Security Keys BG */
       .credentialItem__6c75d {background: none;}
