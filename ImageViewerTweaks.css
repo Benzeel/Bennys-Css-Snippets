@@ -1,11 +1,11 @@
-/* IMAGE VIEWER THEMING V4*/
+/* IMAGE VIEWER THEMING V5*/
 
 /* make photo view scrim less dark */
 .scrim__40128 {
   background-color: var(--background-scrim);
   backdrop-filter: blur(5px);
 }
-.carouselModal_d3a6f0.theme-dark.theme-midnight.images-dark.root__49fc1 {
+.carouselModal_d3a6f0.root__49fc1 {
   backdrop-filter: none;
 }
 
@@ -67,7 +67,7 @@ div.layer_bc663c
   height: 100%;
  }
 
-/* brighten backgrounds for transparent images for legibility*/
+/*brighten backgrounds for transparent images for legibility*/
 .imageWrapper.imageWrapper_af017a.media_a22bfd > .loadingOverlay_af017a {
   background-color: #ffffff31;
   border-radius: 8px;
