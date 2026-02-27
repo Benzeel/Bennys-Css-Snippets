@@ -1,8 +1,7 @@
-/* ----------- blur more things v12 ------------ */
+/* ----------- blur more things v13 ------------ */
 
 
 /* attatchment bar */
-/*.visual-refresh >*/
 .form_f75fb0 {background-color: transparent;}
 .upload_aa605f {background: #0000003d;}
 .wrapper_f7ecac {background: #00000065; backdrop-filter: blur(10px);}
@@ -111,7 +110,8 @@
 
 /* give more emoji menu elements transparency */
 .inspector_aeaaeb, .container_fed6d3, .wrapper__14245, .emojiPickerHasTabWrapper_c0e32c .categoryList_c0e32c, 
-.wrapper__4106a.categoryList__3ad28, .header_fed6d3, .categoryItemDefaultCategory_b9ee0c, .header__8ef02, .wrapper__4e6ce{
+.wrapper__4106a.categoryList__3ad28, .header_fed6d3, .categoryItemDefaultCategory_b9ee0c, .header__8ef02, .wrapper__4e6ce, 
+.vc-favouriteAnything-container, .vc-favouriteAnything-container-header {
   background: transparent;
 }
 /*emoji sidebar: item selected */
@@ -281,7 +281,14 @@
       .vc-settings-quickActions-pill {background: #55555571;}
       .vc-settings-quickActions-pill:hover {background: #7e7e7e71;}
     /* Plugins */
-      .vc-addon-card {background: none;}
+      .vc-addon-card, 
+      .vc-plugins-info-card, 
+      .vc-plugin-stats {background: none !important;}
+      .vc-addon-card:hover {background: #25252546 !important;}
+      .visual-refresh .vc-plugins-info-card, 
+      .visual-refresh .vc-plugin-stats {&:hover{background: #25252546 !important;}}
+      .visual-refresh .vc-plugins-info-card, 
+      .visual-refresh .vc-plugin-stats {background: none !important}
     /* server boosts */
       .appliedBoostContainer_ceb06a {
         background: none; 
@@ -412,4 +419,5 @@ div.scrollableContainer__74017 {background: #00000067; backdrop-filter: blur(10p
 - apps menu
 - gift modal 
 */
+
 
