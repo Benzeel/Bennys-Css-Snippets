@@ -1,4 +1,4 @@
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v11*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v11.1*/
 
 
 /* ---- v transparent messagebox v ---- */
@@ -16,7 +16,7 @@
   div.channelTextArea_f75fb0::before, div.wrapper__44df5 { /* actual text area */
     backdrop-filter: blur(var(--tm-blur)); /* Configure blur amount here */}
 
-  div.autocompleteInner__13533 { background-color: #00000023; }
+  div.autocompleteInner__13533 { background-color: var(--background-gradient-highest); }
 
   div.channelTextArea_f75fb0 { /* actual text area overrides */
     position: relative;
