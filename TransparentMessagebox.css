@@ -1,4 +1,4 @@
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v11.2*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v12*/
 
 
 /* ---- v transparent messagebox v ---- */
@@ -42,19 +42,8 @@
   }
   /* ---- ^ transparent messagebox ^ ---- */
 
-  /* --- v fix & thin out scrollbar v --- */
+  /* --- v fix scrollbar v --- */
   .managedReactiveScroller_d125d2,.scroller__36d07 {
-    &::-webkit-scrollbar {height: 10px; width: 10px; }
-    &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb { visibility: visible; }
-    &::-webkit-scrollbar-thumb {
-      background-clip: padding-box;
-      background-color: var(--scrollbar-thin-thumb); /*change this to change scrollbar colour*/
-      border: 2px solid transparent;
-      border-radius: 6px;
-    }
-    &:hover::-webkit-scrollbar-track, &:hover::-webkit-scrollbar-thumb {visibility: visible; }
     &::-webkit-scrollbar-button:end:increment { height: 35%; }
-    &:hover::-webkit-scrollbar-track { background-color: #3f3f3f6e; }
-  }
-  /* --- ^ fix & thin out scrollbar ^ --- */
+  /* --- ^ fix scrollbar ^ --- */
 }
