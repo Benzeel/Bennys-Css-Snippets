@@ -1,4 +1,4 @@
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v12*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v12.1*/
 
 
 /* ---- v transparent messagebox v ---- */
@@ -45,5 +45,6 @@
   /* --- v fix scrollbar v --- */
   .managedReactiveScroller_d125d2,.scroller__36d07 {
     &::-webkit-scrollbar-button:end:increment { height: 35%; }
+  }
   /* --- ^ fix scrollbar ^ --- */
 }
