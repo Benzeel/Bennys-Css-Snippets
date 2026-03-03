@@ -1,4 +1,4 @@
-/* ----------- blur more things v13 ------------ */
+/* ----------- blur more things v14 ------------ */
 
 
 /* attatchment bar */
@@ -408,10 +408,6 @@ div.actionButtons_cc1819.base__5cd44.focusSensitive__5cd44 > span > .button_a22c
   backdrop-filter: blur(50px);
   transition: 0.1s ease;
 }
-
-/* edit message box + autocomplete */
-div.scrollableContainer__74017 {background: #00000067; backdrop-filter: blur(10px);}
-.autocomplete__13533 {background: #00000065; }
 
 /* To Do (low priority):
 - activity card hover emoji menu
