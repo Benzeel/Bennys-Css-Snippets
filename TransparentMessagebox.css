@@ -1,11 +1,11 @@
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v11.1*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v11.2*/
 
 
 /* ---- v transparent messagebox v ---- */
 :root { /* config */
   --tm-enable: 1; /* 0 disables */
   --tm-blur: 10px; /* configure blur here */
-  --background-gradient-highest: 0 0; /* Change messagebar color, comment out to undo */
+  --chat-background-default: 0 0; /* Change messagebar color, comment out to undo */
 }
 
 @container style(--tm-enable: 1) {
@@ -16,7 +16,7 @@
   div.channelTextArea_f75fb0::before, div.wrapper__44df5 { /* actual text area */
     backdrop-filter: blur(var(--tm-blur)); /* Configure blur amount here */}
 
-  div.autocompleteInner__13533 { background-color: var(--background-gradient-highest); }
+  div.autocompleteInner__13533 { background-color: var(--chat-background-default); }
 
   div.channelTextArea_f75fb0 { /* actual text area overrides */
     position: relative;
