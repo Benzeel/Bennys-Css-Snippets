@@ -1,4 +1,4 @@
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v12.1*/
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v13*/
 
 
 /* ---- v transparent messagebox v ---- */
@@ -40,6 +40,9 @@
   .chatTypingGradientAtBottom__36d07, .chatGradient__36d07, .chatGradientBase__36d07 { /* hide typing gradient */
     display: none !important;
   }
+
+  /* fix with custom theme */
+  :where(.custom-theme-background) .channelTextArea__74017 {background: none !important;}
   /* ---- ^ transparent messagebox ^ ---- */
 
   /* --- v fix scrollbar v --- */
