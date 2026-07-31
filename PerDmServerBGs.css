@@ -33,7 +33,7 @@ div.chat_f75fb0 {
         
   /* DM's */
   /*          Duplicate this part per user.           v ID HERE                                      V URL HERE                TINT HERE IF YOU WANT IT V        Blur (May Cause Lag) V */
-  &:has(section.title_f75fb0  img[src*="/avatars/411305656231133194/"]) {background: url("https://m.patchokki.art/m/7i9.gif"); &::before {background: #0008 ; /*backdrop-filter: blur(5px);*/}}
+  &:has(section.title_f75fb0  img[src*="/avatars/411305656231133194/"]) {background-image: url("https://m.patchokki.art/m/7i9.gif"); &::before {background: #0008 ; /*backdrop-filter: blur(5px);*/}}
 
 }
 
