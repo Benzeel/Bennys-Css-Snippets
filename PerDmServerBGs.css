@@ -1,4 +1,4 @@
-/* Created by Computer Cat, Maintained by Benzeel */ /*v4*/ 
+/* Created by Computer Cat, Maintained by Benzeel */ /*v5*/ 
 
 /* --- v Custom dm/server/channel backgrounds (per instance) v --- */
 div.chat_f75fb0 {
@@ -29,11 +29,11 @@ div.chat_f75fb0 {
   &::before { content: ""; position: absolute; inset: 0;} 
   /*Uncomment to specify custom textbar color.
   .channelTextArea_f75fb0 > div
-  { background: #0000001c;}
+  { background: #0000001c;}*/
         
   /* DM's */
-  /*                Duplicate this part per user.                                                                                                                   v ID HERE                                      V URL HERE                TINT HERE IF YOU WANT IT V         Blur (May Cause Lag) V */
-  &:has(> div > section > div > div.children__9293f > div > div > svg > foreignObject > div > img[src^="https://cdn.discordapp.com/avatars/411305656231133194"]) {background: url("https://m.patchokki.art/m/7i9.gif"); &::before {background: #0008 ; /*backdrop-filter: blur(5px);*/}}
+  /*          Duplicate this part per user.           v ID HERE                                      V URL HERE                TINT HERE IF YOU WANT IT V        Blur (May Cause Lag) V */
+  &:has(section.title_f75fb0  img[src*="/avatars/411305656231133194/"]) {background: url("https://m.patchokki.art/m/7i9.gif"); &::before {background: #0008 ; /*backdrop-filter: blur(5px);*/}}
 
 }
 
