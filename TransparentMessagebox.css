@@ -9,44 +9,44 @@
 }
 
 @container style(--tm-enable: 1) {
-  form.formWithLoadedChatInput_f75fb0 {margin-top: -51vh;}  /* Eat message area's space */
-  div.messagesWrapper__36d07 > div.jumpToPresentBar__0f481 {bottom: 52vh;} /* Fix new messages bar*/
-  div.messagesWrapper__36d07 > form, /* New messages bar */
-  div.autocomplete__13533, /* Emojis and stuff */
-  div.channelTextArea_f75fb0::before, div.wrapper__44df5 { /* actual text area */
+  form.formWithLoadedChatInput_z_gUBg {margin-top: -51vh;}  /* Eat message area's space */
+  div.messagesWrapper_8AE1Qq > div.jumpToPresentBar_j9Vvzj {bottom: 52vh;} /* Fix new messages bar*/
+  div.messagesWrapper_8AE1Qq > form, /* New messages bar */
+  div.autocomplete_CAMiwx, /* Emojis and stuff */
+  div.channelTextArea_z_gUBg::before, div.wrapper_ST_Y69 { /* actual text area */
     backdrop-filter: blur(var(--tm-blur)); /* Configure blur amount here */}
 
-  div.autocompleteInner__13533 { background-color: var(--chat-background-default); }
+  div.autocompleteInner_CAMiwx { background-color: var(--chat-background-default); }
 
-  div.channelTextArea_f75fb0 { /* actual text area overrides */
+  div.channelTextArea_z_gUBg { /* actual text area overrides */
     position: relative;
     &::before { content: ""; position: absolute; inset: 0; border-radius: inherit; } /* Set up blur */
     > * {position: relative;} /* Fix some stuff */
-    > div.autocomplete__13533 { position: absolute; } /* Override commands and emoji menu format */
+    > div.autocomplete_CAMiwx { position: absolute; } /* Override commands and emoji menu format */
     > * {background: 0 0 !important;} /* Text area's internals excluding emojis and commands */
   }
 
-  .chat_f75fb0 {overflow: clip;} /* fix chat bar issues with jumping up */
-  ol.scrollerInner__36d07::after { /* Add spacer for the bottom*/
+  .chat_z_gUBg {overflow: clip;} /* fix chat bar issues with jumping up */
+  ol.scrollerInner_8AE1Qq::after { /* Add spacer for the bottom*/
     display: block;
     content: "";
     position: relative;
     height: 50vh;
   }
 
-  div.floatingBars__74017 {.banner__183e8  { background: 0 0;}} /* Override for new member steps */
-  div.wrapper__44df5 { background: 0 0;} /* Override for follow channel */
+  div.floatingBars_2x8-Qn {.banner_gmkdZC  { background: 0 0;}} /* Override for new member steps */
+  div.wrapper_ST_Y69 { background: 0 0;} /* Override for follow channel */
 
-  .chatTypingGradientAtBottom__36d07, .chatGradient__36d07, .chatGradientBase__36d07 { /* hide typing gradient */
+  .chatTypingGradientAtBottom_8AE1Qq, .chatGradient_8AE1Qq, .chatGradientBase_8AE1Qq { /* hide typing gradient */
     display: none !important;
   }
 
   /* fix with custom theme */
-  :where(.custom-theme-background) .channelTextArea__74017 {background: none !important;}
+  :where(.custom-theme-background) .channelTextArea_2x8-Qn {background: none !important;}
   /* ---- ^ transparent messagebox ^ ---- */
 
   /* --- v fix scrollbar v --- */
-  .managedReactiveScroller_d125d2,.scroller__36d07 {
+  .managedReactiveScroller_tqapBM,.scroller_8AE1Qq {
     &::-webkit-scrollbar-button:end:increment { height: 35%; }
   }
   /* --- ^ fix scrollbar ^ --- */
